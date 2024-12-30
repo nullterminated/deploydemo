@@ -14,6 +14,18 @@
 		<maven.install.skip>true</maven.install.skip>
 		<maven.deploy.skip>true</maven.deploy.skip>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/nullterminated/deploydemo</url>
+		</repository>
+	</distributionManagement>
+	<scm>
+		<connection>scm:git:https://github.com/nullterminated/deploydemo.git</connection>
+		<url>scm:git:https://github.com/nullterminated/deploydemo.git</url>
+		<developerConnection>scm:git:https://github.com/nullterminated/deploydemo.git</developerConnection>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
@@ -88,8 +100,8 @@
 							<files>${project.artifactId}-linux.gtk.x86_64.tar.gz,${project.artifactId}-macos.cocoa.x86_64.tar.gz,${project.artifactId}-win32.win32.x86_64.zip</files>
 							<classifiers>linux.gtk.x86_64,macos.cocoa.x86_64,win32.win32.x86_64</classifiers>
 							<type>tgz,tgz,zip</type>
-							<repositoryId>${repo.id}</repositoryId>
-							<url>${repo.url}</url>
+							<repositoryId>github</repositoryId>
+							<url>https://maven.pkg.github.com/nullterminated/deploydemo</url>
 						</configuration>
 					</execution>
 				</executions>
