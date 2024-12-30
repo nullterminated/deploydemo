@@ -85,8 +85,8 @@
 							<generatePom>true</generatePom>
 							<packaging>sha512sums</packaging>
 							<file>${project.build.directory}/products/sha512sums.txt</file>
-							<files>${project.build.directory}/products/${project.artifactId}-linux.gtk.x86_64.tar.gz,${project.build.directory}/products/${project.artifactId}-macos.cocoa.x86_64.tar.gz,${project.build.directory}/products/${project.artifactId}-win32.win32.x86_64.zip</files>
-							<classifiers>linux.gtk.x86_64,macos.cocoa.x86_64,win32.win32.x86_64</classifiers>
+							<files>${project.build.directory}/products/${project.artifactId}-linux.gtk.x86_64.tar.gz,${project.build.directory}/products/${project.artifactId}-macosx.cocoa.x86_64.tar.gz,${project.build.directory}/products/${project.artifactId}-win32.win32.x86_64.zip</files>
+							<classifiers>linux.gtk.x86_64,macosx.cocoa.x86_64,win32.win32.x86_64</classifiers>
 							<types>tgz,tgz,zip</types>
 							<repositoryId>github</repositoryId>
 							<url>https://maven.pkg.github.com/nullterminated/deploydemo</url>
