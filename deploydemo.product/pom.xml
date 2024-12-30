@@ -51,13 +51,6 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<executions>
@@ -78,13 +71,12 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>3.1.3</version>
+				<artifactId>maven-deploy-plugin</artifactId>
 				<executions>
 					<execution>
-						<phase>install</phase>
+						<phase>deploy</phase>
 						<goals>
-							<goal>install-file</goal>
+							<goal>deploy-file</goal>
 						</goals>
 						<configuration>
 							<groupId>${project.groupId}</groupId>
@@ -93,6 +85,11 @@
 							<generatePom>true</generatePom>
 							<packaging>sha512sums</packaging>
 							<file>${project.build.directory}/products/sha512sums.txt</file>
+							<files>${project.artifactId}-linux.gtk.x86_64.tar.gz,${project.artifactId}-macos.cocoa.x86_64.tar.gz,${project.artifactId}-win32.win32.x86_64.zip</files>
+							<classifiers>linux.gtk.x86_64,macos.cocoa.x86_64,win32.win32.x86_64</classifiers>
+							<type>tgz,tgz,zip</type>
+							<repositoryId>${repo.id}</repositoryId>
+							<url>${repo.url}</url>
 						</configuration>
 					</execution>
 				</executions>
