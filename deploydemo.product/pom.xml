@@ -14,18 +14,6 @@
 		<maven.install.skip>true</maven.install.skip>
 		<maven.deploy.skip>true</maven.deploy.skip>
 	</properties>
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/nullterminated/deploydemo</url>
-		</repository>
-	</distributionManagement>
-	<scm>
-		<connection>scm:git:https://github.com/nullterminated/deploydemo.git</connection>
-		<url>scm:git:https://github.com/nullterminated/deploydemo.git</url>
-		<developerConnection>scm:git:https://github.com/nullterminated/deploydemo.git</developerConnection>
-	</scm>
 	<build>
 		<plugins>
 			<plugin>
