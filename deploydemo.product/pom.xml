@@ -89,7 +89,7 @@
 							<classifiers>linux.gtk.x86_64,macosx.cocoa.x86_64,win32.win32.x86_64</classifiers>
 							<types>tgz,tgz,zip</types>
 							<repositoryId>github</repositoryId>
-							<url>https://maven.pkg.github.com/nullterminated/deploydemo</url>
+							<url>https://maven.pkg.github.com/${github.repository}</url>
 						</configuration>
 					</execution>
 				</executions>
