@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: deploydemo.plugin
 Bundle-Vendor: deploydemo.plugin
 Bundle-SymbolicName: deploydemo.plugin
-Bundle-Version: 1.0.2
+Bundle-Version: 1.0.3.qualifier
 Require-Bundle: org.eclipse.ui,
   org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-21
