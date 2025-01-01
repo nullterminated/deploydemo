@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>deploydemo</groupId>
 		<artifactId>deploydemo</artifactId>
-		<version>1.0.3-SNAPSHOT</version>
+		<version>1.0.3</version>
 	</parent>	
 	<artifactId>deploydemo.targetplatform</artifactId>
 	<packaging>eclipse-target-definition</packaging>
