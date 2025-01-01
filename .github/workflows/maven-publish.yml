@@ -42,7 +42,9 @@ jobs:
         GITHUB_REPO: ${{ github.repository }}
 
     - name: Create a tag
-      run: ./mvnw build-helper:parse-version scm:tag -Dtag=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.incrementalVersion}
+      run: ./mvnw build-helper:parse-version scm:tag -Dgithub.repository=$GITHUB_REPO -Dtag=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.incrementalVersion}
+      env:
+        GITHUB_REPO: ${{ github.repository }}
 
     - name: Publish to GitHub Packages Apache Maven
       run: ./mvnw -B -s $GITHUB_WORKSPACE/settings.xml -Dgithub.repository=$GITHUB_REPO -DskipTests=true deploy
