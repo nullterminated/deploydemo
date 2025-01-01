@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="deploydemo.feature_1.0.1.qualifier.jar" id="deploydemo.feature" version="1.0.1.qualifier">
+   <feature url="deploydemo.feature_1.0.1.jar" id="deploydemo.feature" version="1.0.1">
       <category name="deploydemo.category"/>
    </feature>
-   <feature url="deploydemo.feature.source_1.0.1.qualifier.jar" id="deploydemo.feature.source" version="1.0.1.qualifier">
+   <feature url="deploydemo.feature.source_1.0.1.jar" id="deploydemo.feature.source" version="1.0.1">
       <category name="deploydemo.category"/>
    </feature>
    <category-def name="deploydemo.category" label="deploydemo Category">
