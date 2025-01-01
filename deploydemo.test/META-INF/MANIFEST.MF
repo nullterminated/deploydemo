@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: deploydemo.test
 Bundle-Vendor: deploydemo
 Bundle-SymbolicName: deploydemo.test
-Bundle-Version: 1.0.4
+Bundle-Version: 1.0.5.qualifier
 Fragment-Host: deploydemo.plugin;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-21
 Require-Bundle: junit-jupiter-api
