@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>deploydemo</groupId>
   <artifactId>deploydemo</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
   <properties>
     <tycho.version>4.0.10</tycho.version>
@@ -291,7 +291,7 @@
             <artifact>
               <groupId>deploydemo</groupId>
               <artifactId>deploydemo.targetplatform</artifactId>
-              <version>1.0.0-SNAPSHOT</version>
+              <version>1.0.0</version>
             </artifact>
           </target>
         </configuration>
