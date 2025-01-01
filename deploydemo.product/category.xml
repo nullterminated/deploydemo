@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/deploydemo.feature_1.0.0.jar" id="deploydemo.feature" version="1.0.0"/>
+   <feature url="features/deploydemo.feature_1.0.1.qualifier.jar" id="deploydemo.feature" version="1.0.1.qualifier"/>
 </site>
